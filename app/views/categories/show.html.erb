@@ -1,0 +1,50 @@
+<p id="notice"><%= notice %></p>
+<style>
+.formulario{
+   width: 35%;
+    height: auto;
+    border-radius: 4px;
+    border:2.5px solid #000;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.formulario p{
+  padding:0; margin:7px;
+    width: 90%;
+    height: auto;
+    margin-bottom: 20px;
+    font-size: 12px; 
+  }
+
+ .titulo{
+   color: #72705B;
+    font-family: monospace, Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 50px;    
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
+</style>
+  <p id="notice"><%= notice %></p>
+  <div class="small-container center-block"></div>
+  <center>
+  <h1 class="titulo">Show Category</h1>
+  <div class="formulario">
+
+  <p>
+  <strong>Name:</strong>
+  <%= @category.name %>
+  </p>
+
+  <p>
+  <strong>  Keyword:</strong>
+  <%= @category.keyword %>
+  </p>
+  <p>
+  <%= link_to 'Edit', edit_category_path(@category) %> <i class="fas fa-edit"></i>|
+  <%= link_to 'Back', categories_path %> <i class="fas fa-sign-out-alt"></i>
+  </p>
+  </div>
+  
+  </center>

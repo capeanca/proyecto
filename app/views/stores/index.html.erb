@@ -1,0 +1,107 @@
+<style>
+*{
+  padding:0; margin:0;
+}
+body
+ .titulo{
+    color: #72705B;
+    font-family: monospace, Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 50px;    
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
+table {
+   width: 100%;
+   text-align: left;
+   border-collapse: collapse;
+   margin: 0 0 1em 0;
+   caption-side: top;
+   font-size: 18px; 
+   font-family: monospace;
+   font-weight: bold;
+   
+   
+}
+caption, td, th {
+   padding: 0.3em;
+   font-size: 16px; 
+   font-family: monospace;
+   background-color: #A7C4B5;
+   
+}
+tbody {
+   border-top: 1px solid #000;
+   border-bottom: 1px solid #000;
+}
+tbody th, tfoot th {
+   border: 0;
+}
+th.name {
+   width: 25%;
+}
+th.location {
+   width: 20%;
+}
+th.lasteruption {
+   width: 30%;
+}
+th.eruptiontype {
+   width: 25%;
+}
+tfoot {
+   text-align: center;
+   color: #555;
+   font-size: 0.8em;
+}
+</style>
+<p id="notice"><%= notice %></p>
+<center>
+<h1 class="titulo">Stores</h1>
+</center>
+
+<table id="tabla1234" class="tabla1234">
+
+  <thead>
+  
+    <tr>
+      <th>Name</th>
+      <th>Street</th>
+      <th>Number</th>
+      <th>Zipcode</th>
+      <th>City</th>
+      <th>Country</th>
+      <th>Product</th>
+      <th></th>
+      <th></th>
+      <th> </th>
+      <th colspan="5"></th>
+      
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @stores.each do |store| %>
+      <tr>
+        <td><%= store.name %></td>
+        <td><%= store.street %></td>
+        <td><%= store.number %></td>
+        <td><%= store.zipcode %></td>
+        <td><%= store.city %></td>
+        <td><%= store.country %></td>
+        <td><%= store.product %></td>
+        <td><%= link_to 'Show', store %></td>
+        <td><%= link_to 'Edit', edit_store_path(store) %></td>
+        <td><%= link_to 'Destroy', store, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+<script>
+$(document).ready( function () {
+    $('#tabla1234').DataTable();
+} );
+</script>
+<br>
+
+<%= link_to 'New Store ', new_store_path %><i class="far fa-file"></i>

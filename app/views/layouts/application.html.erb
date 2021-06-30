@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Jcmtest</title>
+    <style type="text/css">
+* { padding: 0; margin: 0;  }
+
+#navegador {  padding: 0.0em; }
+#navegador li { background-color: #9AA0A8 ; margin: auto 3px; ; 
+            width: auto  ;float: left;
+           list-style-type: none;
+           border-radius: 2px;   }
+
+#navegador li a:link, #navegador li a:visited { 
+           color: #BEFFC7; text-decoration:underline overline; }
+
+.borrar { clear: both; }	
+
+          
+</style>
+</head>
+<body>
+
+<div id="navegador">
+  <ul>
+   <li> <%= link_to '  H o m e ', home_index_path %></li>
+   <li> <%= link_to '  S t o r e s ', stores_path %></li>
+   <li> <%= link_to '  C a t e g o r y', categories_path %></li>
+   <li> <%= link_to "P r o d u c t", products_path %></li>
+    
+  </ul>
+  <div class="borrar"></div>
+</div>
+
+
+
+
+
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <link href="https://cdn.datatables.net/1.10.25/css/jquery.dataTables.min.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script src="https://cdn.datatables.net/1.10.25/js/jquery.dataTables.min.js"></script>
+     <script src="https://kit.fontawesome.com/805c37e370.js" crossorigin="anonymous"></script>
+  </head>
+
+
+</nav>
+  <body>
+    <%= yield %>
+    
+    
+  </body>
+  
+</html>

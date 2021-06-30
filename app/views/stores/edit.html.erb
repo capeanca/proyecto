@@ -1,0 +1,43 @@
+<style>
+*{
+  padding:0; margin:0;
+}
+body
+ .titulo{
+    color: #72705B;
+    font-family: monospace, Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 50px;    
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
+.formulario{
+    width: 35%;
+    height: auto;
+    border-radius: 4px;
+    border:2.5px solid #000;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    font-family:monospace;
+    font-size:14px;
+    font-weight: bold;
+}
+.formulario p{
+    width: 90%;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+
+</style>
+<div class="small-container center-block">
+<center>
+ <h1 class="titulo">Edit Product</h1>
+<div class="formulario">
+
+<%= render 'form', store: @store %>
+</div>
+
+<%= link_to 'Show', @store %> <i class="far fa-eye"></i>|
+<%= link_to 'Back', stores_path %> <i class="fas fa-sign-out-alt"></i>

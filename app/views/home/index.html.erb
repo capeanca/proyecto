@@ -1,0 +1,81 @@
+<style>
+*{
+  padding:0; margin:0;
+}
+body
+ .titulo{
+    color: #72705B;
+    font-family: monospace, Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 50px;    
+    margin-top: 30px;
+    margin-bottom: 50px;
+  }
+  .subtitulo{
+    color: #72705B;
+    font-family: monospace, Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 20px;    
+    margin-top: 20px;
+    margin-bottom: 10px;
+  }
+ .formulario{
+    width: 35%;
+    height: auto;
+    border-radius: 4px;
+    border:2.5px solid #000;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+  caption, td, th {
+   padding: 0.3em;
+   font-size: 16px; 
+   font-family: monospace;
+   background-color: #A7C4B5;
+   
+}
+  .tbody {
+   border-top: 1px solid #000;
+   border-bottom: 1px solid #000;
+  }
+ .tbody th, tfoot th {
+   border: 0;
+}
+.th.name {
+   width: 25%;
+}
+}
+</style>
+<p id="notice"><%= notice %></p>
+<center>
+<h2 class="titulo">Full Stack Developer </h2>
+</center>
+
+<h1 class= "subtitulo"> JCM-001 Ruby Project Web Application </h1>
+
+<p>As a Lead Software Developer, I would like to test the programming capacities of a
+candidate and evaluate their coding style, structure, knowledge and creativity. </p>For this, I
+would like for a full Ruby on Rails project using a Postgres database to be developed.
+This project consists on the creation of a web graphic interface in order to establish
+relationships between Stores, Products and Categories
+<p><h4>● The tables’ attributes should be at least:</h4></p>
+<center>
+<div class="formulario">
+<table>
+<tr>
+<td><strong>store</strong></td>
+<td><strong>product</strong></td>
+<td><strong>category</strong></td>
+</tr>
+<tr>
+  <td>name, street, number, zip code, city, country, products</td>
+  <td>name, color, category, size, price, stores</td>
+  <td>name, keywords</td>
+</tr>
+</table>
+</div>
+</center>
+<p><h4>●A Product can only be related to max. one Category</h4></p>
+<p><h4>● A Category can have many Keywords, but a Keyword can only be part of one
+Category</h4></p>
