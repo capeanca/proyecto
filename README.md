@@ -1,24 +1,31 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Fullstack Developer
+JCM-001 Ruby Project Web Application
 
-Things you may want to cover:
+El proyecto se desarrolla con las plataformas 
+solicitadas, ruby on rails como framework ademas 
+de esta se utilizaron javascript, html, css.
 
-* Ruby version
+utilize visual studio code(vsc) como editor de codigo
+fuente.
 
-* System dependencies
+al abril la carpeta(folder) se podra visualizar
+toda la biblioteca que se desarrollo
 
-* Configuration
+para poder visualizar el proyecto ingresamos a
+la terminal de VSC(se inicia automaticamente),
+o presionamos CTRL+SHIFT+Ñ.
 
-* Database creation
+una vez abirto el terminal ingresamos el comando
+"rails server" esto cargara todas la biblioteca
+y pondra en marcha el proyecto.
 
-* Database initialization
+ingresando con el navegador a la URL "localhost:3000/home/index"
+o "http://127.0.0.1:3000/home/index" tendremos
+una paguina muy intuitiva con los campos y tablas
+solicitados.
 
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+en cada una de estas podemos realizar las funciones básicas
+CRUD, adicional a esto podemos filtrar de varias formas las 
+tablas.
